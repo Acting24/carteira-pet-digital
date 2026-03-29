@@ -1,0 +1,191 @@
+MIT License
+
+Copyright (c) 2026 Equipe Carteira Digital Pet - UNIVESP
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+# 🏛️ Licença do Projeto Carteira Digital Pet
+
+## 📜 Resumo da Licença MIT
+
+Esta é uma licença permissiva que permite:
+
+### ✅ **Permitido:**
+- 🟢 **Uso comercial** - Usar em projetos comerciais
+- 🟢 **Modificação** - Alterar o código fonte
+- 🟢 **Distribuição** - Compartilhar com outros
+- 🟢 **Uso privado** - Usar para propósitos pessoais/privados
+- 🟢 **Sublicenciamento** - Aplicar licenças diferentes em trabalhos derivados
+
+### ⚠️ **Condições:**
+- 📋 **Incluir licença e copyright** - Deve manter este arquivo em todas as cópias
+- 📋 **Incluir aviso de copyright** - Créditos devem ser mantidos
+
+### ❌ **Limitações:**
+- 🔴 **Sem garantia** - Software fornecido "como está"
+- 🔴 **Sem responsabilidade** - Autores não são responsáveis por danos
+
+---
+
+## 👥 Equipe de Desenvolvimento
+
+### **🎓 Projeto Acadêmico:**
+- **Instituição:** UNIVESP (Universidade Virtual do Estado de São Paulo)
+- **Disciplina:** PJI110 - Projeto Integrador em Computação I
+- **Período:** 2026
+- **Metodologia:** Design Thinking
+
+### **👨‍💻 Integrantes da Equipe:**
+
+1. **Adilson Lucas da Silva**
+   - 📧 Email: 24205869@aluno.univesp.br
+   - 🎯 Papel: Líder/Repository Owner
+   - 🔗 GitHub: Acting24
+
+2. **David Wilames Nunes Batista**
+   - 📧 Email: 23217049@aluno.univesp.br
+   - 🏗️ Papel: Arquiteto/Tech Lead
+
+3. **Helton Silva de Almeida**
+   - 📧 Email: 24209102@aluno.univesp.br
+   - ⚙️ Papel: Desenvolvedor Backend
+
+4. **Lucas Pereira de Lima**
+   - 📧 Email: 24214565@aluno.univesp.br
+   - 🗄️ Papel: Especialista em Banco de Dados
+
+5. **Thaise Michelaine Nunes de Oliveira**
+   - 📧 Email: 24219760@aluno.univesp.br
+   - 🎨 Papel: Desenvolvedora Frontend/UX
+
+6. **Vanessa de Pádua Nunes Fusco Parisi**
+   - 📧 Email: 24219706@aluno.univesp.br
+   - 👥 Papel: UX Researcher
+
+7. **Vanessa Dias Fernandes**
+   - 📧 Email: 24202074@aluno.univesp.br
+   - 📚 Papel: Documentadora/QA
+
+---
+
+## 🤝 Contribuições e Colaboração
+
+### **📜 Termos de Contribuição:**
+
+Este projeto é desenvolvido como parte de um **projeto acadêmico obrigatório** da disciplina PJI110 da UNIVESP. As contribuições são realizadas pelos **7 integrantes oficiais** da equipe.
+
+### **🔓 Uso por Terceiros:**
+
+Embora o código seja licenciado sob MIT (uso livre), pedimos que:
+
+1. **🎓 Respeite o contexto acadêmico** - Este é um projeto educacional
+2. **💬 Entre em contato** se quiser contribuir ou usar comercialmente
+3. **📝 Cite a fonte** quando usar como referência
+4. **🤝 Compartilhe melhorias** que possam beneficiar o projeto educacional
+
+### **📧 Contato para Colaborações:**
+
+- **Email Principal:** 24205869@aluno.univesp.br (Adilson Lucas)
+- **Repositório:** https://github.com/Acting24/carteira-pet-digital
+- **Instituição:** UNIVESP - PJI110
+
+---
+
+## 🏛️ Propriedade Intelectual
+
+### **📚 Desenvolvimento Acadêmico:**
+
+Este software foi desenvolvido como parte do **Projeto Integrador em Computação I (PJI110)** da **UNIVESP**, seguindo metodologia **Design Thinking** e boas práticas de desenvolvimento colaborativo.
+
+### **🤖 Assistência IA:**
+
+O desenvolvimento contou com assistência de IA (Oz Agent) para:
+- 🏗️ **Estruturação do projeto** e organização de arquivos
+- 📚 **Documentação técnica** e guias de uso
+- 🔧 **Configurações** de desenvolvimento e deployment
+- 📝 **Padrões de código** e convenções de commit
+
+**Toda a lógica de negócio, design e decisões arquiteturais são de autoria da equipe humana.**
+
+### **🔗 Co-Autoria:**
+
+Conforme documentado nos commits, este projeto inclui:
+- **👨‍🎓 Autoria Principal:** Equipe de 7 integrantes da UNIVESP
+- **🤖 Co-Autoria IA:** Oz Agent (Warp AI Assistant)
+
+---
+
+## ⚖️ Disclaimers Legais
+
+### **🎓 Uso Acadêmico:**
+
+Este projeto é parte de um **trabalho acadêmico obrigatório** e não deve ser usado para:
+- ❌ Plágio ou cópia em outros trabalhos acadêmicos
+- ❌ Submissão como trabalho próprio por outros estudantes
+- ❌ Violação de políticas acadêmicas de outras instituições
+
+### **🔒 Dados e Privacidade:**
+
+- 🔐 **Dados fictícios:** Use apenas dados não reais durante desenvolvimento
+- 🚫 **Sem dados pessoais:** Não armazene informações reais de pets ou tutores
+- 🛡️ **Segurança:** Implemente medidas adequadas se usado em produção
+
+### **⚕️ Responsabilidade Médica:**
+
+- ⚠️ **Não substitui veterinário:** Este sistema é organizacional, não médico
+- 📋 **Apenas registro:** Não fornece diagnósticos ou recomendações médicas
+- 🏥 **Consulte profissionais:** Sempre busque orientação veterinária adequada
+
+---
+
+## 🌟 Agradecimentos
+
+### **🎓 Institucionais:**
+- **UNIVESP** por proporcionar educação superior pública e de qualidade
+- **Professores** da disciplina PJI110 pela orientação
+- **Comunidade acadêmica** pelo suporte colaborativo
+
+### **🛠️ Tecnológicos:**
+- **Python Software Foundation** pelos frameworks utilizados
+- **Django** e **Flask** communities pelos recursos e documentação
+- **Bootstrap** pelo framework CSS responsivo
+- **MySQL** pela solução de banco de dados
+- **GitHub** pela plataforma de colaboração
+
+### **🤖 Assistência IA:**
+- **Warp AI (Oz Agent)** pela assistência técnica e documentação
+- **OpenAI ecosystem** pelas ferramentas que possibilitaram a colaboração
+
+---
+
+## 📅 Versionamento da Licença
+
+- **📅 Data de Criação:** 29 de Março de 2026
+- **📊 Versão:** 1.0
+- **🔄 Última Atualização:** 29/03/2026
+- **👨‍💻 Criada por:** Adilson Lucas da Silva
+- **🤖 Co-Authored-By:** Oz <oz-agent@warp.dev>
+
+---
+
+**🚀 PROJETO CARTEIRA DIGITAL PET - UNIVESP 2026 🚀**
+
+*Educação, Tecnologia e Inovação para um futuro melhor* ✨
