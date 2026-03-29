@@ -8,8 +8,8 @@ PJI110 - UNIVESP 2026
 from django.db import models
 from django.utils import timezone
 from datetime import date
-from imagekit.models import ImageSpecField
-from imagekit.processors import ResizeToFit
+# from imagekit.models import ImageSpecField
+# from imagekit.processors import ResizeToFit
 
 from apps.core.models import Tutor, Veterinario
 
@@ -161,13 +161,13 @@ class Pet(models.Model):
         help_text='Foto do pet'
     )
     
-    # Versão redimensionada da foto
-    foto_thumbnail = ImageSpecField(
-        source='foto',
-        processors=[ResizeToFit(200, 200)],
-        format='JPEG',
-        options={'quality': 85}
-    )
+    # Versão redimensionada da foto (comentado temporariamente)
+    # foto_thumbnail = ImageSpecField(
+    #     source='foto',
+    #     processors=[ResizeToFit(200, 200)],
+    #     format='JPEG',
+    #     options={'quality': 85}
+    # )
     
     # Relacionamentos
     tutor = models.ForeignKey(

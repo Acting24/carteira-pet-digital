@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐕 Carteira Digital Pet - PJI110 UNIVESP 2026</title>
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .pet-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .footer-custom {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-paw"></i> Carteira Digital Pet
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-4 fw-bold mb-4">
+                        🐕 Carteira Digital Pet
+                    </h1>
+                    <p class="lead mb-4">
+                        Sistema web para gerenciamento digital de carteiras de vacinação de pets
+                    </p>
+                    <div class="badge bg-light text-dark fs-6 mb-4">
+                        PJI110 - UNIVESP 2026 ✨
+                    </div>
+                    <div>
+                        <a href="/admin/" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-cogs"></i> Acessar Admin
+                        </a>
+                        <a href="#funcionalidades" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-info-circle"></i> Saiba Mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Status do Sistema -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-success d-flex align-items-center" role="alert">
+                        <i class="fas fa-check-circle me-2"></i>
+                        <div>
+                            <strong>✅ Sistema Online!</strong> 
+                            O projeto Django está funcionando corretamente. Banco de dados SQLite configurado e modelos implementados.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funcionalidades -->
+    <section id="funcionalidades" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="fw-bold">🎯 Funcionalidades Implementadas</h2>
+                    <p class="text-muted">Sistema completo baseado no esquema SQL fornecido</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Usuários e Tutores -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users pet-icon text-primary"></i>
+                            <h5 class="card-title">👥 Usuários & Tutores</h5>
+                            <p class="card-text">
+                                Sistema de autenticação personalizado com perfis de tutores incluindo dados completos e endereço.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-success">✅ Implementado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pets -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-dog pet-icon text-warning"></i>
+                            <h5 class="card-title">🐕 Gestão de Pets</h5>
+                            <p class="card-text">
+                                Cadastro completo de pets com espécies, dados pessoais, fotos e cálculo automático de idade.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-success">✅ Implementado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vacinas -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-syringe pet-icon text-info"></i>
+                            <h5 class="card-title">💉 Controle de Vacinas</h5>
+                            <p class="card-text">
+                                Sistema completo de vacinação com histórico, lembretes automáticos e protocolos por espécie.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-success">✅ Implementado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Veterinários -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-md pet-icon text-success"></i>
+                            <h5 class="card-title">⚕️ Veterinários</h5>
+                            <p class="card-text">
+                                Cadastro de profissionais veterinários com dados de contato e relacionamento com pets atendidos.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-success">✅ Implementado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Django Admin -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cogs pet-icon text-danger"></i>
+                            <h5 class="card-title">🛠️ Django Admin</h5>
+                            <p class="card-text">
+                                Interface administrativa completa para gerenciar todos os dados do sistema de forma profissional.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-success">✅ Implementado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banco de Dados -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-database pet-icon text-dark"></i>
+                            <h5 class="card-title">🗄️ Banco de Dados</h5>
+                            <p class="card-text">
+                                Models Django fiéis ao esquema SQL fornecido com relacionamentos complexos e validações.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-success">✅ Implementado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especificações Técnicas -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h3 class="text-center mb-4">🏗️ Stack Tecnológico</h3>
+                    <div class="row text-center">
+                        <div class="col-md-3 mb-3">
+                            <i class="fab fa-python fa-2x text-primary mb-2"></i>
+                            <h6>Python 3.13</h6>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <i class="fas fa-leaf fa-2x text-success mb-2"></i>
+                            <h6>Django 4.2</h6>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <i class="fas fa-database fa-2x text-warning mb-2"></i>
+                            <h6>SQLite</h6>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <i class="fab fa-bootstrap fa-2x text-info mb-2"></i>
+                            <h6>Bootstrap 5</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Projeto -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h3 class="mb-4">📚 Sobre o Projeto</h3>
+                    <p class="lead">
+                        Este sistema foi desenvolvido como parte do <strong>Projeto Integrador em Computação I (PJI110)</strong> 
+                        da <strong>UNIVESP</strong>, seguindo a metodologia <strong>Design Thinking</strong> para resolver o 
+                        problema real de perda e esquecimento de carteiras de vacinação físicas de pets.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <h5>🎓 Instituição</h5>
+                            <p>UNIVESP - Universidade Virtual do Estado de São Paulo</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>📋 Disciplina</h5>
+                            <p>PJI110 - Projeto Integrador em Computação I</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>👥 Equipe</h5>
+                            <p>7 integrantes colaborando via GitHub</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login para Admin -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h4>🔧 Acesso Administrativo</h4>
+                    <p class="mb-4">Use as credenciais abaixo para acessar o Django Admin e gerenciar os dados:</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-user"></i> Usuário:</h6>
+                            <code class="fs-5">admin</code>
+                        </div>
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-key"></i> Senha:</h6>
+                            <code class="fs-5">admin123</code>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="/admin/" class="btn btn-light btn-lg">
+                            <i class="fas fa-external-link-alt"></i> Acessar Django Admin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h5>🐕 Carteira Digital Pet</h5>
+                    <p>
+                        Desenvolvido com <i class="fas fa-heart text-danger"></i> para PJI110 - UNIVESP 2026<br>
+                        <small>Sistema web completo com Django + Bootstrap + SQLite</small>
+                    </p>
+                    <div class="mt-3">
+                        <a href="https://github.com/Acting24/carteira-pet-digital" class="btn btn-outline-light" target="_blank">
+                            <i class="fab fa-github"></i> Ver no GitHub
+                        </a>
+                    </div>
+                    <hr class="my-4">
+                    <p class="mb-0">
+                        <small>&copy; 2026 - Equipe PJI110 UNIVESP. Todos os direitos reservados.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Smooth scroll para links âncora
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animação dos cards
+        const cards = document.querySelectorAll('.feature-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

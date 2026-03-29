@@ -29,27 +29,18 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1', cast=lamb
 # ==============================================================================
 
 DJANGO_APPS = [
-    'admin_interface',
-    'colorfield',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
 ]
 
 THIRD_PARTY_APPS = [
-    'rest_framework',
-    'corsheaders',
-    'crispy_forms',
-    'crispy_bootstrap5',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'imagekit',
-    'django_extensions',
+    # Adicionar conforme necessário
+    # 'rest_framework',
+    # 'crispy_forms',
 ]
 
 LOCAL_APPS = [
@@ -65,9 +56,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # ==============================================================================
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -167,8 +156,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 
-# WhiteNoise configuration
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# Configuração simples de arquivos estáticos
 
 # ==============================================================================
 # MEDIA FILES
@@ -186,6 +174,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # ==============================================================================
 # AUTHENTICATION
 # ==============================================================================
+
+# Modelo de usuário customizado
+AUTH_USER_MODEL = 'core.Usuario'
 
 SITE_ID = 1
 
@@ -296,15 +287,6 @@ COURSE = "PJI110"
 # ==============================================================================
 
 if DEBUG:
-    # Debug Toolbar
-    INSTALLED_APPS.append('debug_toolbar')
-    MIDDLEWARE.insert(0, 'debug_toolbar.middleware.DebugToolbarMiddleware')
-    
-    INTERNAL_IPS = [
-        '127.0.0.1',
-        'localhost',
-    ]
-    
     # Configurações de email para desenvolvimento
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 else:
