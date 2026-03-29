@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h1 class="card-title mb-0">
+                    <i class="fas fa-info-circle me-2"></i>
+                    Sobre o Projeto
+                </h1>
+            </div>
+            <div class="card-body p-4">
+                <!-- Informações do Projeto -->
+                <div class="mb-4">
+                    <h3 class="text-primary">{{ projeto.nome }}</h3>
+                    <p class="lead">{{ projeto.descricao }}</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><strong>Versão:</strong> {{ projeto.versao }}</li>
+                                <li><strong>Disciplina:</strong> {{ projeto.disciplina }}</li>
+                                <li><strong>Instituição:</strong> {{ projeto.instituicao }}</li>
+                                <li><strong>Ano:</strong> {{ projeto.ano }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problema e Solução -->
+                <div class="mb-4">
+                    <h4><i class="fas fa-question-circle text-warning me-2"></i>O Problema</h4>
+                    <p>
+                        Muitos tutores de pets enfrentam dificuldades para organizar e acompanhar 
+                        o calendário de vacinação de seus animais. As carteiras físicas são facilmente 
+                        perdidas, danificadas ou esquecidas, resultando em atrasos na imunização e 
+                        riscos à saúde dos pets.
+                    </p>
+                </div>
+                
+                <div class="mb-4">
+                    <h4><i class="fas fa-lightbulb text-success me-2"></i>Nossa Solução</h4>
+                    <p>
+                        O <strong>Carteira Digital Pet</strong> é um sistema web que permite aos tutores 
+                        gerenciar digitalmente o histórico de vacinação de seus pets, com recursos como:
+                    </p>
+                    <ul>
+                        <li>Cadastro completo de pets (nome, espécie, raça, idade, foto)</li>
+                        <li>Registro detalhado de vacinas aplicadas</li>
+                        <li>Calendário de próximas vacinas</li>
+                        <li>Lembretes automáticos</li>
+                        <li>Acesso online de qualquer lugar</li>
+                        <li>Histórico sempre disponível e organizado</li>
+                    </ul>
+                </div>
+                
+                <!-- Metodologia -->
+                <div class="mb-4">
+                    <h4><i class="fas fa-cogs text-info me-2"></i>Metodologia Design Thinking</h4>
+                    <p>
+                        Este projeto segue a metodologia <strong>Design Thinking</strong>, 
+                        focando na compreensão profunda dos usuários e suas necessidades:
+                    </p>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="timeline">
+                                <div class="timeline-item mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="badge bg-primary rounded-circle me-3">1</span>
+                                        <div>
+                                            <strong>Empatia</strong> - Entrevistas com tutores de pets
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-item mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="badge bg-primary rounded-circle me-3">2</span>
+                                        <div>
+                                            <strong>Definição</strong> - Análise e síntese dos problemas
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-item mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="badge bg-primary rounded-circle me-3">3</span>
+                                        <div>
+                                            <strong>Ideação</strong> - Brainstorming de soluções
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-item mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="badge bg-primary rounded-circle me-3">4</span>
+                                        <div>
+                                            <strong>Prototipação</strong> - Desenvolvimento do sistema
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="d-flex align-items-center">
+                                        <span class="badge bg-primary rounded-circle me-3">5</span>
+                                        <div>
+                                            <strong>Teste</strong> - Validação com usuários reais
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tecnologias -->
+                <div class="mb-4">
+                    <h4><i class="fas fa-code text-primary me-2"></i>Tecnologias Utilizadas</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Backend</h6>
+                            <ul>
+                                <li>Python 3.8+</li>
+                                <li>Flask (Framework web)</li>
+                                <li>SQLAlchemy (ORM)</li>
+                                <li>Flask-Login (Autenticação)</li>
+                                <li>Flask-Migrate (Migrations)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Frontend</h6>
+                            <ul>
+                                <li>HTML5 + CSS3</li>
+                                <li>Bootstrap 5</li>
+                                <li>JavaScript</li>
+                                <li>Font Awesome (Ícones)</li>
+                                <li>Jinja2 (Templates)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h6 class="mt-3">Banco de Dados & Ferramentas</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>SQLite (Desenvolvimento)</li>
+                                <li>PostgreSQL (Produção)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Git + GitHub</li>
+                                <li>VS Code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Status do Desenvolvimento -->
+                <div class="mb-4">
+                    <h4><i class="fas fa-tasks text-success me-2"></i>Status Atual</h4>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemax="100">
+                            Quinzena 1 (15%)
+                        </div>
+                    </div>
+                    <p><strong>Quinzena 1:</strong> Configuração inicial, estrutura do projeto e planejamento concluídos.</p>
+                    
+                    <div class="alert alert-info">
+                        <h6><i class="fas fa-calendar me-2"></i>Próximos Passos:</h6>
+                        <ul class="mb-0">
+                            <li><strong>Quinzena 2-3:</strong> Análise de requisitos e design</li>
+                            <li><strong>Quinzena 4-5:</strong> Desenvolvimento do backend</li>
+                            <li><strong>Quinzena 6-8:</strong> Interface de usuário</li>
+                            <li><strong>Quinzena 9-10:</strong> Funcionalidades avançadas</li>
+                            <li><strong>Quinzena 11-14:</strong> Testes, refinamentos e entrega</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Links Úteis -->
+                <div class="text-center">
+                    <h5>Links Úteis</h5>
+                    <div class="btn-group" role="group">
+                        <a href="{{ url_for('main.index') }}" class="btn btn-primary">
+                            <i class="fas fa-home me-1"></i>Início
+                        </a>
+                        <a href="{{ url_for('main.hello_world') }}" class="btn btn-outline-primary">
+                            <i class="fas fa-globe me-1"></i>Demo Flask
+                        </a>
+                        <a href="{{ url_for('main.api_status') }}" class="btn btn-outline-success">
+                            <i class="fas fa-heartbeat me-1"></i>Status API
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

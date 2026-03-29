@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <!-- Hero Section -->
+        <div class="jumbotron bg-primary text-white rounded p-5 mb-4">
+            <div class="container-fluid py-5">
+                <div class="text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-paw" style="font-size: 4rem;"></i>
+                    </div>
+                    <h1 class="display-4 fw-bold">Carteira Digital Pet</h1>
+                    <p class="fs-4">Sistema web para gerenciamento de vacinação de pets</p>
+                    <p class="lead">Nunca mais perca o controle das vacinas do seu melhor amigo!</p>
+                    
+                    <div class="mt-4">
+                        <a class="btn btn-light btn-lg me-3" href="#funcionalidades" role="button">
+                            <i class="fas fa-list me-2"></i>Ver Funcionalidades
+                        </a>
+                        <a class="btn btn-outline-light btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fas fa-rocket me-2"></i>Começar Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Status do Desenvolvimento -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="alert alert-info d-flex align-items-center">
+            <i class="fas fa-info-circle me-3 fs-4"></i>
+            <div>
+                <strong>Status do Projeto:</strong> 
+                Quinzena 1 - Configuração e Planejamento Inicial
+                <br>
+                <small class="text-muted">Flask configurado ✅ | Estrutura criada ✅ | Repositório Git pronto ✅</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Funcionalidades Planejadas -->
+<div class="row" id="funcionalidades">
+    <div class="col-12 mb-4">
+        <h2 class="text-center mb-4">
+            <i class="fas fa-star text-warning me-2"></i>
+            Funcionalidades Planejadas
+        </h2>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-user-circle text-primary mb-3" style="font-size: 3rem;"></i>
+                <h5 class="card-title">Cadastro de Pets</h5>
+                <p class="card-text">Registre todos os seus pets com informações completas: nome, idade, espécie, raça e foto.</p>
+            </div>
+            <div class="card-footer bg-light">
+                <small class="text-muted">📅 Quinzena 4-5</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-syringe text-success mb-3" style="font-size: 3rem;"></i>
+                <h5 class="card-title">Controle de Vacinas</h5>
+                <p class="card-text">Mantenha histórico completo de vacinação com datas, tipos de vacina e próximas doses.</p>
+            </div>
+            <div class="card-footer bg-light">
+                <small class="text-muted">📅 Quinzena 6-8</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-bell text-warning mb-3" style="font-size: 3rem;"></i>
+                <h5 class="card-title">Lembretes Automáticos</h5>
+                <p class="card-text">Receba notificações quando for hora de vacinar seu pet. Nunca mais esqueça!</p>
+            </div>
+            <div class="card-footer bg-light">
+                <small class="text-muted">📅 Quinzena 9-10</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tecnologias Utilizadas -->
+<div class="row mt-5">
+    <div class="col-12 mb-4">
+        <h3 class="text-center mb-4">
+            <i class="fas fa-code text-info me-2"></i>
+            Stack Tecnológico
+        </h3>
+    </div>
+    
+    <div class="col-12">
+        <div class="row text-center">
+            <div class="col-md-3 mb-3">
+                <div class="p-3 border rounded">
+                    <i class="fab fa-python text-primary" style="font-size: 2.5rem;"></i>
+                    <h6 class="mt-2">Python + Flask</h6>
+                    <small class="text-muted">Backend</small>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="p-3 border rounded">
+                    <i class="fas fa-database text-success" style="font-size: 2.5rem;"></i>
+                    <h6 class="mt-2">SQLite + SQLAlchemy</h6>
+                    <small class="text-muted">Banco de Dados</small>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="p-3 border rounded">
+                    <i class="fab fa-bootstrap text-purple" style="font-size: 2.5rem;"></i>
+                    <h6 class="mt-2">Bootstrap 5</h6>
+                    <small class="text-muted">Frontend</small>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="p-3 border rounded">
+                    <i class="fab fa-git-alt text-danger" style="font-size: 2.5rem;"></i>
+                    <h6 class="mt-2">Git + GitHub</h6>
+                    <small class="text-muted">Controle de Versão</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Links Úteis -->
+<div class="row mt-5 pt-4 border-top">
+    <div class="col-md-6">
+        <h5><i class="fas fa-link me-2"></i>Links Rápidos</h5>
+        <ul class="list-unstyled">
+            <li><a href="{{ url_for('main.hello_world') }}" class="text-decoration-none">
+                <i class="fas fa-globe me-1"></i> Hello World (Teste Flask)
+            </a></li>
+            <li><a href="{{ url_for('main.api_status') }}" class="text-decoration-none">
+                <i class="fas fa-heartbeat me-1"></i> Status da API
+            </a></li>
+            <li><a href="{{ url_for('main.test') }}" class="text-decoration-none">
+                <i class="fas fa-cog me-1"></i> Informações do Sistema
+            </a></li>
+        </ul>
+    </div>
+    
+    <div class="col-md-6">
+        <h5><i class="fas fa-graduation-cap me-2"></i>Sobre o Projeto</h5>
+        <p class="text-muted">
+            Este projeto faz parte da disciplina <strong>PJI110 - Projeto Integrador em Computação I</strong> 
+            da UNIVESP, aplicando metodologia Design Thinking para resolver problemas reais.
+        </p>
+        <a href="{{ url_for('main.sobre') }}" class="btn btn-outline-primary">
+            <i class="fas fa-info-circle me-1"></i> Saber Mais
+        </a>
+    </div>
+</div>
+{% endblock %}

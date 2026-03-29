@@ -1,0 +1,117 @@
+# ========================================
+# CARTEIRA DIGITAL PET - DEPENDÊNCIAS
+# ========================================
+# PJI110 - UNIVESP 2026
+# Opção Principal: DJANGO
+
+# ========================================
+# DEPENDÊNCIAS PRINCIPAIS - DJANGO
+# ========================================
+
+# Framework Web
+Django==4.2.9
+django-environ==0.11.2
+django-extensions==3.2.3
+
+# Banco de Dados
+mysqlclient==2.2.4
+django-mysql==4.12.0
+
+# APIs e Serialização
+djangorestframework==3.14.0
+django-cors-headers==4.3.1
+
+# Autenticação e Segurança
+django-allauth==0.57.0
+django-guardian==2.4.0
+
+# Interface Admin
+django-admin-interface==0.26.0
+django-colorfield==0.10.1
+
+# Templates e Estáticos
+django-crispy-forms==2.1
+crispy-bootstrap5==0.7
+
+# Imagens e Upload
+Pillow==10.2.0
+django-imagekit==5.0.0
+
+# Utilitários
+python-decouple==3.8
+python-dateutil==2.8.2
+
+# ========================================
+# DEPENDÊNCIAS DE DESENVOLVIMENTO
+# ========================================
+
+# Debug
+django-debug-toolbar==4.2.0
+
+# Testes
+pytest==7.4.4
+pytest-django==4.8.0
+factory-boy==3.3.0
+coverage==7.4.1
+
+# Linting e Formatação
+flake8==7.0.0
+black==24.1.1
+isort==5.13.2
+
+# Documentação
+django-extensions==3.2.3
+
+# ========================================
+# DEPENDÊNCIAS DE PRODUÇÃO
+# ========================================
+
+# Servidor Web
+gunicorn==21.2.0
+whitenoise==6.6.0
+
+# Monitoramento
+sentry-sdk[django]==1.40.6
+
+# Cache
+redis==5.0.1
+django-redis==5.4.0
+
+# ========================================
+# DEPENDÊNCIAS ALTERNATIVAS - FLASK
+# ========================================
+# (Caso queira usar Flask em vez de Django)
+
+# Framework Web Flask (comentadas)
+# Flask==3.0.0
+# Flask-SQLAlchemy==3.1.1
+# Flask-Login==0.6.3
+# Flask-WTF==1.2.1
+# Flask-Migrate==4.0.5
+# Flask-Admin==1.6.1
+# python-dotenv==1.0.0
+
+# ========================================
+# DEPENDÊNCIAS UNIVERSAIS
+# ========================================
+
+# Manipulação de dados
+pandas==2.2.0
+openpyxl==3.1.2
+
+# Validação
+email-validator==2.1.0.post1
+
+# Utilitários de data
+pytz==2024.1
+
+# HTTP Requests
+requests==2.31.0
+
+# ========================================
+# DESENVOLVIMENTO LOCAL
+# ========================================
+
+# Debug local
+ipython==8.21.0
+jupyter==1.0.0
